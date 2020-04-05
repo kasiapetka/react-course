@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styleClasses from './App.css';
 import Persons from './../components/Persons/Persons';
 import Cockpit from "../components/Cockpit/Cockpit";
+import WithClass from "../hoc/WithClass";
+
 
 class App extends Component {
 
@@ -91,7 +93,7 @@ class App extends Component {
         }
 
         return (
-            <div className={styleClasses.App}>
+            <WithClass classes={styleClasses.App}>
                 <button onClick={this.toggleCockpitHandler}>Remove cockpit</button>
                 {showCockpit
                     ?
@@ -102,7 +104,7 @@ class App extends Component {
                     :
                     null}
                 {persons}
-            </div>
+            </WithClass>
         );
     }
 }
