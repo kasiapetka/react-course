@@ -12,13 +12,15 @@ const Cockpit = (props) => {
         //is rendered and unmounted
         console.log("[Cockpit] useEffect")
 
-        setTimeout(()=>{
+        const timer = setTimeout(()=>{
             alert('Saved to the cloud')
         },1000)
 
         //If you return some function it runs after the first render cycle
         //but before the main useEffect, you can do some cleanup here
         return ()=>{
+            //when the component unmounts we clear timeout so there is no alert
+            clearTimeout(timer);
             console.log("[Cockpit] useEffect - cleanup work")
         }
     },[])
