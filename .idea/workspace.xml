@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1a9b433-0a15-4a64-bbc3-b37ccaf29ec4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZiIiwd9F4WUpidXVGxmiif3oqA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\gitrepo\ReactCourse\first-app\src\components" />
+      <recent name="C:\gitrepo\ReactCourse\first-app\src\containers" />
+      <recent name="C:\gitrepo\ReactCourse\first-app\src\Persons" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1a9b433-0a15-4a64-bbc3-b37ccaf29ec4" name="Default Changelist" comment="" />
+      <created>1585315618965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585315618965</updated>
+      <workItem from="1585315623703" duration="7713000" />
+      <workItem from="1585323641138" duration="14000" />
+      <workItem from="1585423726870" duration="1999000" />
+      <workItem from="1585504458354" duration="3261000" />
+      <workItem from="1585507917784" duration="13000" />
+      <workItem from="1585507940761" duration="3264000" />
+      <workItem from="1585583483758" duration="3807000" />
+      <workItem from="1585656206928" duration="7934000" />
+      <workItem from="1585667386936" duration="1305000" />
+      <workItem from="1585744129522" duration="13000" />
+      <workItem from="1585818743394" duration="1815000" />
+      <workItem from="1585911204596" duration="716000" />
+      <workItem from="1586079482004" duration="1082000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1110" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585316281872">
+      <screen x="-1680" y="32" width="1680" height="1010" />
+    </state>
+    <state x="-1110" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1585316281872" />
+    <state x="-1060" y="293" key="FileChooserDialogImpl" timestamp="1585911919396">
+      <screen x="-1680" y="32" width="1680" height="1010" />
+    </state>
+    <state x="-1060" y="293" key="FileChooserDialogImpl/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1585911919396" />
+    <state x="567" y="213" key="FileChooserDialogImpl/0.0.1536.824/-1680.32.1680.1010@0.0.1536.824" timestamp="1585426035116" />
+    <state x="-1145" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1585744129137">
+      <screen x="-1680" y="32" width="1680" height="1010" />
+    </state>
+    <state x="-1145" y="362" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1585744129137" />
+    <state x="-1177" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1585911322585">
+      <screen x="-1680" y="32" width="1680" height="1010" />
+    </state>
+    <state x="-1177" y="249" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1585911322585" />
+  </component>
+</project>
