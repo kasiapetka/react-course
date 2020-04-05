@@ -11,7 +11,11 @@ class Persons extends Component{
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
         console.log('[Persons] shouldComponentUpdate')
-        return true;
+        //we are not updating persons if the persons didnt change but for ex only cockpit
+        if (nextProps.persons !== this.props.persons)
+            return true;
+        else
+            return false;
     }
 
     getSnapshotBeforeUpdate(prevProps, prevState) {
