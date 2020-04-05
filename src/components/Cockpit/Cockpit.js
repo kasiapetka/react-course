@@ -36,10 +36,10 @@ const Cockpit = (props) => {
         }
     })
 
-    if(props.persons.length <=2){
+    if(props.personsLength <=2){
         classes.push(styleClasses.red);
     }
-    if(props.persons.length <=1){
+    if(props.personsLength <=1){
         classes.push(styleClasses.bold);
     }
 
@@ -58,4 +58,6 @@ const Cockpit = (props) => {
     );
 }
 
-export default Cockpit
+//React.memo - stores the snapshot of this component and only if its input changes
+//it will rerender it
+export default React.memo(Cockpit)
