@@ -12,9 +12,9 @@ class App extends Component {
         console.log('[App] constructor')
         this.state = {
             persons: [
-                {id: 'aaaa', name: 'Kasiula', age: '21'},
-                {id: 'cccc', name: 'Mikus', age: '21'},
-                {id: 'bbbb', name: 'Karolek', age: '22'},
+                {id: 'aaaa', name: 'Kasiula', age: 22},
+                {id: 'cccc', name: 'Mikus', age: 21},
+                {id: 'bbbb', name: 'Karolek', age: 22},
             ],
             showPersons: false,
             showCocpit: true,
@@ -76,10 +76,10 @@ class App extends Component {
         this.setState({
             showCocpit: !aux
         })
-    }
+    };
 
     render() {
-        console.log('[App] render')
+        console.log('[App] render');
         const showPersons = this.state.showPersons;
         const showCockpit = this.state.showCocpit;
         let persons;

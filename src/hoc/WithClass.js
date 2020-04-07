@@ -6,4 +6,4 @@ const WithClass = props => (
     </div>
 );
 
-export default WithClass
+export default WithClass;
