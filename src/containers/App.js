@@ -3,7 +3,7 @@ import styleClasses from './App.css';
 import Persons from './../components/Persons/Persons';
 import Cockpit from "../components/Cockpit/Cockpit";
 import WithClass from "../hoc/WithClass";
-
+import AuthContext from "../context/authContext";
 
 class App extends Component {
 
@@ -18,6 +18,7 @@ class App extends Component {
             ],
             showPersons: false,
             showCocpit: true,
+            auth: false
         };
     }
 
@@ -69,13 +70,17 @@ class App extends Component {
         this.setState({
             showPersons: !aux
         })
-    }
+    };
 
     toggleCockpitHandler = () => {
         const aux = this.state.showCocpit;
         this.setState({
             showCocpit: !aux
         })
+    };
+
+    loginHandler = () => {
+        this.setState({auth: true});
     };
 
     render() {
@@ -87,7 +92,8 @@ class App extends Component {
             persons = (<div>
                 <Persons persons={this.state.persons}
                          clicked={this.deletePersonHandler}
-                         changed={this.onNameChangeHandler}/>
+                         changed={this.onNameChangeHandler}
+                      />
             </div>)
 
         }
@@ -95,15 +101,18 @@ class App extends Component {
         return (
             <WithClass classes={styleClasses.App}>
                 <button onClick={this.toggleCockpitHandler}>Remove cockpit</button>
-                {showCockpit
-                    ?
-                    <Cockpit toggle={this.togglePersonsHandler}
-                             personsLength={this.state.persons.length}
-                             showPersons={this.state.showPersons}
-                             title={this.props.appTitle}/>
-                    :
-                    null}
-                {persons}
+
+                <AuthContext.Provider value={{auth: this.state.auth,login: this.loginHandler}}>
+                    {showCockpit
+                        ?
+                        <Cockpit toggle={this.togglePersonsHandler}
+                                 personsLength={this.state.persons.length}
+                                 showPersons={this.state.showPersons}
+                                 title={this.props.appTitle}/>
+                        :
+                        null}
+                    {persons}
+                </AuthContext.Provider>
             </WithClass>
         );
     }
