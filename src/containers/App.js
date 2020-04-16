@@ -4,6 +4,7 @@ import Persons from './../components/Persons/Persons';
 import Cockpit from "../components/Cockpit/Cockpit";
 import WithClass from "../hoc/WithClass";
 import AuthContext from "../context/authContext";
+import Blog from "./Blog/Blog";
 
 class App extends Component {
 
@@ -100,6 +101,7 @@ class App extends Component {
 
         return (
             <WithClass classes={styleClasses.App}>
+                <Blog/>
                 <button onClick={this.toggleCockpitHandler}>Remove cockpit</button>
 
                 <AuthContext.Provider value={{auth: this.state.auth,login: this.loginHandler}}>

@@ -17,7 +17,7 @@ const Cockpit = (props) => {
         console.log("[Cockpit] useEffect");
 
         const timer = setTimeout(() => {
-            alert('Saved to the cloud')
+            // alert('Saved to the cloud')
         }, 1000);
 
         //i trigger this in useEffect after JSX code is executed
