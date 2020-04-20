@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1a9b433-0a15-4a64-bbc3-b37ccaf29ec4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FullPost/FullPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FullPost/FullPost.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewPost/NewPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewPost/NewPost.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Post/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Post/Post.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Blog/Blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Blog/Blog.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/App.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Blog/Posts/Posts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Blog/Posts/Posts.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/PersonManager/PersonManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/PersonManager/PersonManager.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FullPost/FullPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Blog/FullPost/FullPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FullPost/FullPost.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Blog/FullPost/FullPost.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewPost/NewPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Blog/NewPost/NewPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewPost/NewPost.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Blog/NewPost/NewPost.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Blog/Blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Blog/Blog.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -44,12 +48,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../topics-manager-repo/topics-manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\gitrepo\ReactCourse\first-app\react-course\src\containers\Blog" />
       <recent name="C:\gitrepo\ReactCourse\first-app\src\components" />
       <recent name="C:\gitrepo\ReactCourse\first-app\src\containers" />
       <recent name="C:\gitrepo\ReactCourse\first-app\src\Persons" />
@@ -93,7 +99,10 @@
       <workItem from="1586883555419" duration="6000" />
       <workItem from="1586884433635" duration="23000" />
       <workItem from="1586945295210" duration="644000" />
-      <workItem from="1587027616780" duration="4704000" />
+      <workItem from="1587027616780" duration="5332000" />
+      <workItem from="1587051931470" duration="9000" />
+      <workItem from="1587328950658" duration="4904000" />
+      <workItem from="1587387122547" duration="6519000" />
     </task>
     <servers />
   </component>
@@ -101,14 +110,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1110" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585316281872">
+    <state x="-1110" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587392392162">
       <screen x="-1680" y="32" width="1680" height="1010" />
     </state>
-    <state x="-1110" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1585316281872" />
-    <state x="-1060" y="293" key="FileChooserDialogImpl" timestamp="1587039705393">
+    <state x="-1110" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1587392392162" />
+    <state x="-1060" y="293" key="FileChooserDialogImpl" timestamp="1587042475331">
       <screen x="-1680" y="32" width="1680" height="1010" />
     </state>
-    <state x="-1060" y="293" key="FileChooserDialogImpl/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1587039705393" />
+    <state x="-1060" y="293" key="FileChooserDialogImpl/0.0.1536.824/-1680.32.1680.1010@-1680.32.1680.1010" timestamp="1587042475331" />
     <state x="567" y="213" key="FileChooserDialogImpl/0.0.1536.824/-1680.32.1680.1010@0.0.1536.824" timestamp="1586874658001" />
     <state x="-1145" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1585744129137">
       <screen x="-1680" y="32" width="1680" height="1010" />
