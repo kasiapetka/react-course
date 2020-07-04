@@ -1,11 +1,19 @@
-import React, {Component} from 'react';
+import React, {Component, Suspense} from 'react';
 import styleClasses from './App.module.css';
 import WithClass from "../hoc/WithClass";
 import {BrowserRouter as Router} from "react-router-dom";
 import PersonManager from "./PersonManager/PersonManager";
-import {Route, NavLink, Switch} from "react-router-dom";
+import {Route, NavLink, Switch, Redirect} from "react-router-dom";
 import Posts from "./Blog/Posts/Posts";
-import NewPost from "./Blog/NewPost/NewPost";
+// import NewPost from "./Blog/NewPost/NewPost";
+import asyncComponent from "../hoc/AsyncComponent";
+
+// const AsyncNewPost = asyncComponent(()=>{
+//     return import("./Blog/NewPost/NewPost");
+// });
+
+const NewPosts = React.lazy(()=>import("./Blog/NewPost/NewPost"));
+
 
 class App extends Component {
 
@@ -60,8 +68,13 @@ class App extends Component {
 
                     <Switch>
                         <Route path="/persons" exact component={PersonManager}/>
-                        <Route path="/newPost" exact component={NewPost}/>
+                        <Route path="/newPost" exact render={()=><Suspense fallback={<div>Loading...</div>}>
+                            <NewPosts/>
+                        </Suspense>}
+                        />
                         <Route path="/posts" component={Posts}/>
+                        <Route render={()=><p>404 </p>}/>
+                        {/*<Redirect from="/" to="/posts"/>*/}
                     </Switch>
                 </Router>
             </WithClass>
